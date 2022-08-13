@@ -19,7 +19,7 @@ function Quote() {
                 type="email"
                 placeholder="Email"
               />
-              <select class="form-select">
+              <select className="form-select">
                 <option selected>Frieght Type</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -30,7 +30,7 @@ function Quote() {
                 type="number"
                 placeholder="Phone Number"
               />
-              <textarea class="form-control" rows="4" placeholder="Message" />
+              <textarea className="form-control" rows="4" placeholder="Message" />
               <button type="button" className="btn  fs-3 px-4 py-3 px-md-5 py-md-3 ">
                 Submit
               </button>
