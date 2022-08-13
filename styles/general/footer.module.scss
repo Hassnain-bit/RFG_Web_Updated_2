@@ -1,0 +1,114 @@
+@import "../general/mixins.scss";
+@import "./variables.scss";
+
+.footer {
+  // @include sectionVerticalSpace;
+  @include sectionHorizontalSpace;
+  padding-top: 50px;
+  padding-bottom: 30px;
+
+  @include tablet() {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+
+  @include aboutPageMobileView() {
+    
+  }
+
+  .link_heading {
+    padding-top: 2rem;
+  }
+  &__menu {
+      list-style-image: url("../../public/static/images/chevron-left.png");
+      padding-left: 18px!important;
+    &__contacts {
+      list-style: none;
+      padding-left: 0;
+      li {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    @include footerLogo;
+  }
+
+  &__logo_content {
+    @include footerLogoContent;
+    margin-bottom: 2rem;
+  }
+
+  &__socials {
+    &__icon {
+      display: inline-block;
+      position: relative;
+      margin-right: 0.8rem ;
+      @include footerSocials;
+    }
+  }
+
+  &__logo_link {
+    @include footerLogoContent;
+    color: $first-gs-heading-color;
+    &:hover{
+      text-decoration: underline;
+    color: $first-gs-heading-color;
+
+      
+    }
+
+  }
+
+  &__link_heading {
+    @include footerLinkHeading;
+    margin-bottom: 3rem;
+  }
+
+  &__link {
+    margin: 1.5rem 0;
+    
+    &_item {
+      text-decoration: none;
+      @include footerLinks;
+      
+      &__contact {
+        margin-left: 1rem;
+        &__location {
+          margin-left: 1rem;
+        }
+      }
+
+      &__contact:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.copyrights {
+  background-color: $primary-color;
+   
+  padding: 1.5rem 0;
+  @include copyrightsHeight;
+  @include flexCenterRow;
+
+  h6 {
+    @include copyrightsText;
+color: $white-color;
+  }
+}
+div div div .footer-contactUs-ul{
+  padding-left: 0!important;
+}
+.f-location-icon {
+  left:-15px;
+                  }
+                  
